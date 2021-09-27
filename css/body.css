@@ -1,0 +1,505 @@
+body {
+	background: #34495E;
+	font-family: 'Roboto', sans-serif;
+	margin: 0; 
+	padding: 0;
+	overflow-x: hidden;
+}
+
+
+/* links at the top */
+.links {
+	position: fixed;
+	margin: 3% 0 0 40%;
+	z-index: 100;
+}
+
+
+.links a {
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
+	padding: 12px 22px;
+	border-bottom: 3px solid wheat;
+	transition: 0.5s ease;
+	box-shadow: inset 0 0 0 0 wheat; 
+}
+
+.links a:hover {
+	transition: 0.5s ease;
+	box-shadow: inset 0 -50px 0 0 wheat; 
+	color: black;
+}
+
+
+
+/* float right */
+.float-right {
+	float: right;
+	padding: 0 0 0 80px;
+}
+
+.float-right a:first-child {
+	font-size: 15px;
+	padding: 12px 16px;
+	border-bottom: 3px solid #FF6565;
+	transition: 0.5s ease;
+	box-shadow: inset 0 0 0 0 #FF6565;
+}
+
+.float-right a:first-child:hover {
+	transition: 0.5s ease;
+	box-shadow: inset 0 -50px 0 0 #FF6565; 
+	color: #fff ;
+}
+
+
+.float-right a:nth-child(2) {
+	font-size: 15px;
+	padding: 12px 16px;
+	border-bottom: 3px solid springgreen;
+	transition: 0.5s ease;
+	box-shadow: inset 0 0 0 0 springgreen;
+}
+
+
+.float-right a:nth-child(2):hover {
+	transition: 0.5s ease;
+	box-shadow: inset 0 -50px 0 0 springgreen; 
+	color: black;
+}
+
+@media screen and (max-width: 1150px) {
+	.links a {
+		font-size: 15px;
+	}
+
+	.float-right {
+		float: right;
+		padding: 0 0 0 10px;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	.links a {
+		font-size: 15px;
+	}
+
+	.float-right {
+		float: right;
+		padding: 0 0 0 5px;
+	}
+
+	.float-right a:first-child {
+		font-size: 15px;
+		padding: 12px 12px;
+	}
+
+	.links a {
+		padding: 12px 12px;
+	}
+
+	.float-right a:nth-child(2) {
+		font-size: 15px;
+		padding: 12px 12px;
+	}
+
+}
+
+/* top left container */
+.container-logo {
+	position: fixed;
+	background: steelblue;
+	margin: -12%;
+	width: 600px;
+	height: 500px;
+	border-radius: 50%;
+	transform: skewX(-35deg);
+	z-index: -1;
+}
+
+
+.logo {
+	position: fixed;
+	color: #fff;
+	font-size: 50px;
+	margin: 3%;
+}
+
+@media screen and (max-width: 750px){
+	.logo {
+		position: relative;
+		color: #fff;
+		font-size: 50px;
+		margin: 3%;
+	}
+}
+/* card section */ 
+.card {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 8px 8px 16px 2px rgba(0, 0, 0, 0.5);
+	margin: 20% 5%;
+	width: 90%;
+	height: 50vh;
+	text-align: center;
+}
+
+
+
+/* texts inside of the card section */
+.welcome-div {
+	text-align: center;
+	margin: 15% 0
+}
+
+.welcome {
+	z-index: 100;
+	text-align: center;
+	font-size: 50px;
+	color: #E5E8E8;
+}
+
+@media screen and (max-width:800px) {
+	.welcome {
+		text-align: center;
+		font-size: 35px;
+		color: #E5E8E8;
+	}
+}
+
+@media screen and (max-width:580px) {
+.welcome {
+	margin-bottom: 25%;
+}
+}
+
+
+/* backgound suit */
+.background-suit {
+	width: 90%;
+}
+
+
+
+/* div between */
+.div-between {
+	width: 100%;
+	height: 60px;
+}
+
+
+
+/* suit cards */
+.suit-card {
+	margin: 10% 5%;
+}
+
+
+.container-all {
+}
+
+.suits-card {
+	display: inline-block;
+}
+
+.suits-card img {
+	margin: 0 15%;
+	display: block;
+	width: 80%;
+}
+
+
+/* content card */
+.content-cards {
+	display: inline-block;
+	width: 40%;
+	border: 2px solid black;
+	padding: 3% 10px;
+	margin: 2% ;
+}
+
+.content-cards h1{
+	color: #fff;
+	text-align: center;
+	padding: 3% 10px;
+	margin: 2%;
+}
+
+.content-cards p{
+	color: #fff;
+	text-align: center;
+	padding: 3% 10px;
+	background-color: springgreen;
+	cursor: pointer;
+	margin: 2%;
+	font-weight: bold;
+}
+
+
+.content-cards p:hover{
+	color: #fff;
+	text-align: center;
+	padding: 3% 10px;
+	background-color: springgreen;
+	cursor: pointer;
+	transform: scale(0.9);	
+}
+
+
+
+/* buttons add */
+.adds {
+	font-weight: bold;
+	margin: 7% 2%  0 5px;
+	text-align: center;
+}
+
+
+.add {
+	margin: 0 3%;
+	padding: 12px 16px;
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	background: #E74C3C;
+	margin-top: 5px; 
+}
+
+.add-yellow {
+	padding: 12px 16px;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	background: #F4D03F;
+}
+
+.add:hover {
+	outline: none;
+	border: 0;
+	background: #CB4335;
+	transform: scale(0.96);
+}
+
+.add-yellow:hover {
+	background: #D4AC0D;
+	transform: scale(0.96);
+	outline: none;
+	border: 0;
+}
+
+
+/* titles */
+.suits-header {
+	text-align: center;
+	font-size: 3rem;
+	color: #fff;
+}
+
+
+/* show button */
+.show {
+	cursor: pointer;
+	display: none;
+}
+
+@media screen and (max-width: 750px) {
+
+	.links a{
+		position: relative;
+		margin: 3% 0 0 40%;
+		z-index: 100;
+		display: none;
+	}
+
+
+	.show {
+		z-index: 100;
+		float: right;
+		position: absolute;
+		display: block;
+		text-align: right;
+		margin: 3% 0 0 80%;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.topOne {
+		padding-top: 20% ; 
+	}
+}
+
+.box-links {
+	opacity: 1;
+	position: absolute;
+	background-color: #ddd;
+	width: 80%;
+	height: 390px;
+	z-index: 100;
+	border-radius: 5px;
+	margin: 20% 10%;
+	transition: 0.5s ease;
+	display: none;
+}
+
+.box-links-added {
+	opacity: 0;;
+}
+
+.big-card {
+	padding: 5% 0;
+}
+
+.big-card a {
+	margin: 0 10%;
+	padding: 12px 0px;
+	display: block;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	background-color: #909497;
+}
+
+.big-card a:nth-child(odd) {
+	background-color: #5D6D7E;
+}
+
+.big-card a:hover {
+	transform: scale(0.9);
+	background: #17202A;
+}
+
+
+
+/* for ediding the hamburger part */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+/* GO TO TOP */
+#topBtn{
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	font-size: 22px;
+	width: 50px;
+	height: 50px;
+	background: #e74c3c;
+	color: white;
+	border: none;
+	cursor: pointer;
+	display: none;
+} 
+
+
+/* footer */
+.footer p {
+	color: #fff;
+	text-align: center;
+}
+
+
+/* media sceen for small screens */
+
+.content-cards:hover {
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 580px) {
+	.suits-hearder {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+
+	/* suit cards */
+	.suit-card {
+		margin: 10% 3%;
+	}
+
+	.suits-card {
+		display: block;
+		justify-content: center;
+	}
+
+
+	/* content card */
+	.content-cards {
+		display: block;
+		padding: 3% 10px;
+		margin: 5% 25%;
+	}
+
+	.content-cards h1{
+		padding: 3% 5px;
+		margin: 3% 0;
+		font-size: 15px;
+	}
+
+	.content-cards p{
+		color: #fff;
+		text-align: center;
+		padding: 3% 10px;
+		background-color: springgreen;
+		cursor: pointer;
+		margin: 2%;
+		font-weight: bold;
+	}
+
+
+
+
+	/* buttons add */
+	.adds {
+		font-weight: normal;
+	}
+
+
+	.add {
+		padding: 8px 16px;
+	}
+
+	.add-yellow {
+		padding: 8px 16px;
+	}
+
+	/* titles */
+	.suits-header {
+		font-size: 1.5rem;
+	}
+}
+
+
